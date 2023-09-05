@@ -1,0 +1,339 @@
+/* Nota: los iconos de los campos de input "Usuario y Contraseña" son imágenes .svg al igual que los iconos para ingresar con Facebook, Linkedin o Google. Estas imágenes que se ubican como iconos no pueden ser modificadas en caso de por ejemplo agregarles un comportamiento como "hover" */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --supply-blue: #0d6efd;
+    --supply-white: #fff;
+    --supply-grey: #9A9797;
+    --supply-hover: #317ff5;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../images/Login-ImageBG.jpg");
+    background-size: cover;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    
+}
+
+#container {
+    border-radius: 5px;
+    background-color: var(--supply-white);
+    color: var(--supply-grey);
+    width: 19%;
+    height: 414px;    
+    margin: auto;
+    margin-top: 130px;
+    font-size: 10px;
+    padding: 30px;
+}
+
+#container .logo {
+    align-items: center;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 10px;
+    
+}
+
+#container  h1 {
+    color: var(--supply-blue);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+p {
+    text-align: center;
+}
+
+/* Iconos del campo de usuario y del campo contraseña ambos son imágenes .svg */
+.user-icon {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+
+.padlock-icon {
+    position: absolute;
+    margin-left: 5px;    
+    margin-top: 6px;
+}
+
+/* Botón para ver y ocultar la contraseña */
+/* Nota: Aquí se utilizan imágenes pero también se pueden utilizar iconos como "Favicon" */
+
+.toggle-password {
+    position: relative;
+    top: 1px;
+    left: 172px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggle-password::before {
+    content: url('../images/openeye-vector.svg');    
+    position: absolute;    
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-password.hide::before {
+    content: url('../images/eyeOff.svg');
+}
+
+/* --------------------------------------------------------------- */
+
+#container input {
+    
+    border-radius: 5px;
+    border: 1px solid var(--supply-blue);    
+    width: 100%;
+    height: 26px;
+    margin-bottom: 15px;
+    padding: 12px 12px 12px 22px;
+    /* position: relative; */
+}
+
+#container #forgot {
+    font-size: 12px;
+    text-decoration: none;    
+    color: var(--supply-blue);
+    padding: 41px;
+}
+
+#container #forgot:hover {
+    color: var(--supply-hover);
+}
+
+#container #button {
+    background-color: var(--supply-blue);
+    border-style: none;
+    cursor: pointer;
+    color: var(--supply-white);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 100%;
+    height: 28px;
+    padding-top: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#container #button:hover {
+    background-color: var(--supply-hover);
+    border-style: none;
+}
+
+#redes {
+    font-size: 13px;
+    align-items: center;
+    margin: 14px;
+}
+
+#redes a {
+    padding: 5px;    
+}
+
+#footer {
+    font-size: 13px;
+    padding: 11px;
+}
+
+#footer a {
+    text-decoration: none;
+    color:  var(--supply-blue);
+    font-weight: 700;
+}
+
+#footer a:hover {
+    color: var(--supply-hover);
+}
+
+/* ********** RESPONSIVE ********* */
+
+/* Tablets size */
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-color: var(--supply-blue);
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;        
+    }    
+    
+    #home {
+        display: none;
+    }
+
+    #container {
+        border-radius: 5px;
+        background-color: var(--supply-white);
+        color: var(--supply-grey);
+        width: 50%;
+        height: 414px;    
+        margin: auto;
+        margin-top: 130px;
+        font-size: 10px;
+        padding: 30px;
+    }
+
+    #container .logo {
+        width: 50%;
+        height: 30px;
+        margin-bottom: 10px;
+        
+    }
+
+    #container  h1 {
+        font-size: 18px;
+        font-weight: 700;        
+    }
+
+    #container #forgot {
+        font-size: 13px;
+        text-decoration: none;    
+        color: var(--supply-blue);
+        padding: 100px;
+    }
+    
+    #container #forgot:hover {
+        color: var(--supply-hover);
+    }
+
+    .toggle-password {
+        position: relative;
+        top: 1px;
+        left: 297px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .toggle-password::before {
+        content: url('../images/openeye-vector.svg');    
+        position: absolute;    
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .toggle-password.hide::before {
+        content: url('../images/eyeOff.svg');
+    }
+
+    #footer {
+        font-size: 14px;
+        padding: 11px;
+    }
+    
+    #footer a {
+        text-decoration: none;
+        color:  var(--supply-blue);
+        font-weight: 700;
+    }
+    
+    #footer a:hover {
+        color: var(--supply-hover);
+    }
+}
+
+/* Phone size */
+
+@media only screen and (max-width: 390px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-color: var(--supply-blue);
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;        
+    }    
+    
+    #home {
+        display: none;
+    }
+
+    #container {
+        border-radius: 5px;
+        background-color: var(--supply-white);
+        color: var(--supply-grey);
+        width: 100%;
+        height: 414px;    
+        margin: auto;
+        margin-top: 130px;
+        font-size: 10px;
+        padding: 30px;
+    }
+
+    #container .logo {
+        width: 50%;
+        height: 30px;
+        margin-bottom: 10px;
+        
+    }
+
+    #container  h1 {
+        font-size: 18px;
+        font-weight: 700;        
+    }
+
+    #container #forgot {
+        font-size: 13px;
+        text-decoration: none;    
+        color: var(--supply-blue);
+        padding: 100px;
+    }
+    
+    #container #forgot:hover {
+        color: var(--supply-hover);
+    }
+
+    .toggle-password {
+        position: relative;
+        top: 1px;
+        left: 295px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .toggle-password::before {
+        content: url('../images/openeye-vector.svg');    
+        position: absolute;    
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .toggle-password.hide::before {
+        content: url('../images/eyeOff.svg');
+    }
+
+    #footer {
+        font-size: 14px;
+        padding: 11px;
+    }
+    
+    #footer a {
+        text-decoration: none;
+        color:  var(--supply-blue);
+        font-weight: 700;
+    }
+    
+    #footer a:hover {
+        color: var(--supply-hover);
+    }
+}

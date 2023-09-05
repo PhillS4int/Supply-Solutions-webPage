@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/register.css">
+    <title>Regístrate</title>
+</head>
+<body>
+    <div id="container">
+        <img class="logo" src="images/blueLogo.svg" alt="supply solutions logo">
+        <h1>Regístrate</h1>
+
+        <form action="post" method="post" id="registrarse">
+
+            <label for="nombre">
+                <input type="text" name="nombres" id="nombre" placeholder="Nombres completos" autofocus required maxlength="45">
+            </label>
+
+            <label for="apellidos">
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required maxlength="45">
+            </label>
+
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="E-mail: ejemplo@email.com" required>
+            </label>
+
+            <label for="password">
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                <span id="togglePassword" class="toggle-password"></span>
+            </label>
+
+            <label for="confpassword">
+                <input type="password" name="confpassword" id="confpassword" placeholder="Confirmar contraseña" required>
+                <span id="seePassword" class="see-password"></span>
+            </label>
+
+            <label for="terms">
+                <input type="checkbox" name="terms" id="terms" required> Acepto los <a href="#">términos y condiciones.</a>
+            </label>
+
+            <input type="submit" value="Registrarme" id="button">
+
+            <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+
+        </form>
+        <script src="scripts.js"></script>
+    </div>    
+</body>
+</html>

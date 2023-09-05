@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/login.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <title>Inicia sesión</title>
+  </head>
+  <body>
+    
+    <div id="container">
+      <img class="logo" src="images/blueLogo.svg" alt="supply solutions logo">
+      <h1>Iniciar sesión</h1>
+
+      <form action="post" method="post" id="login">
+
+        <label for="usuario">
+            <img class="user-icon" src="images/User-icon.png" alt="user">
+            <input id="user" type="text" placeholder="Usuario" name="usuario" autofocus required>               
+        </label>
+
+        <label for="password">
+          <img class="padlock-icon" src="images/padlock-icon.png" alt="padlock icon">
+          <span id="togglePassword" class="toggle-password"></span>         
+          <input id="password" type="password" name="password" placeholder="Contraseña" required>
+        </label>         
+
+        <a id="forgot" href="#">Olvidé mi contraseña</a>
+  
+        <input type="submit" value="Ingresar" id="button">
+        
+
+        <p id="redes">
+          O ingresa con:<br><br>
+          <a href="#"><img src="images/Facebook-vector.svg" alt="Logo Facebook"/></a>
+          <a href="#"><img src="images/Linkedin-vector.svg" alt="Logo Linkedin"></a>
+          <a href="#"><img src="images/google-vector.svg" alt="Logo Google"></a>
+        </p>
+
+        <p id="footer">¿No tienes una cuenta? <a href="register.html" target="_blank">Regístrate</a></p>        
+        
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+    <!-- Nota: ¡Ojo! Al colocar la etiqueta "script" en el "head" no se puede identificar en el DOM
+    el tipo de acción que se debe realizar, generando un error de tipo "Uncaught TypeError" que no deja ejecutar la o las funciones que contenga el documento "scripts.js". Cuándo es un "script" que hace funcionar la aplicación, se debe inculir dentro del "body", pero cuando es un "script" externo (de una página), se debe incluir en "head" -->
+  </body>
+</html>

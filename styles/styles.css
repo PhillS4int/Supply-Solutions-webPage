@@ -1,0 +1,247 @@
+/* Fuentes utilizadas en la página index.html y la página de tienda.html. Se importan desde la carpeta de "fonts" utilizando el "@font-face" y luego se agrega el atributo "font-family" en el elemento del html que va a llevar dicha fuente, en este caso el tipo de letra del "body" tendrá toda la fuente de tipo "Roboto-Regular" y los títulos serán "Roboto-Bold" */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores corporativos */
+:root {
+    --supply-blue: #0d6efd;
+    --supply-white: #fff;
+    --supply-grey: #9A9797;
+    --supply-hover: #317ff5;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold_0.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    color: var(--supply-blue);    
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
+}
+
+/* Ubicación de la imagen de inicio detrás de los elementos y texto */
+
+#inicio {
+    background-image: linear-gradient(0deg, rgba(26, 26, 26, 0.85), rgba(26,26,26,0.85)), url(../images/Inicio-image.jpg) ;
+    background-size: cover;
+    background-position: 50% 50%;    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;    
+    margin-top: 50px;
+}
+
+#title-help {
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+#service {
+    margin: auto;
+    padding: auto;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+/* --------------Encabezado de la sección "Contáctanos" */
+.contactanos {
+    background-image: url(../images/Contacto-head.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    margin: 50px 50px 50px 50px;
+}
+
+/* ----------------- SECCIÓN "SOBRE NOSOTROS"------------------- */
+
+.container-full {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-text {
+    padding: 20px;
+}
+
+.col-image {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+}
+
+.col-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ************************************************************************** */
+
+/* ******************************* T I E N D A.HTML *********************************** */
+
+aside {
+    width: 30%;
+    height: 876px;
+    padding: 156px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+}
+
+/* ------------------ Carrusel de imágenes de productos ----------------------------- */
+
+#carouselProducts {
+    margin-top: 184px;
+}
+
+/*-------------------------- Slide de productos ----------------------------*/
+
+.product-item {
+    border: 1px solid var(--supply-blue);
+}
+
+.product-img {
+    position: relative;
+    overflow: hidden;    
+}
+
+.btns {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button {
+    border: none;
+    background-color: var(--supply-blue);
+    color: var(--supply-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+    background-color: var(--supply-hover);
+}
+
+.product-img:hover .btns {
+    bottom: 0;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.product-type {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.product-name {
+    transition:  all 0.3s ease-in-out;
+}
+
+.product-name:hover{
+    color: var(--supply-hover)!important;
+}
+
+.product-price {
+    color: var(--supply-blue);
+    font-size: 18px;
+}
+
+.product-item {
+    width: 300px;
+}
+
+/* ------------------------- Slide de marcas (logos) ------------------------------ */
+/* Slide de Jack Oliver => https://codepen.io/studiojvla/pen/qVbQqW */
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}

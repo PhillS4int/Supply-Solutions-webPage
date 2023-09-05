@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owl_carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl_carousel/owl.theme.default.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles/styles.css">    
+
+    <title>Tienda</title>
+</head>
+<body>
+    
+    <header class="bg-primary text-white container-fluid fixed-top">
+
+        <!-- INFO AND SOCIAL NETWORKS -->
+        <div id="info" class="row m-2 d-none d-lg-block">
+            <p class="col m-auto p-2"><i class="bi bi-geo-alt-fill"></i> Mi dirección principal #00 - 00 Ciudad - País</p>
+            <p class="col m-auto"><i class="bi bi-telephone-fill"></i> Teléfono: +indicativo 000 00 00</p>
+                
+
+            <!-- Social links -->
+            <div class=" col d-flex justify-content-end">
+                <a href="#"><i class="bi-facebook text-white m-2"></i></a>
+                <a href="#"><i class="bi-instagram text-white m-2"></i></a>
+                <a href="#"><i class="bi-tiktok text-white m-2"></i></a>
+                <a href="#"><i class="bi-linkedin text-white m-2"></i></a></i>
+                <a href="#"><i class="bi-whatsapp text-white m-2"></i></a>
+            </div>
+        </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-primary styles-nav p-3" role="navigation">
+
+            <!-- Logo/botón home -->
+            <a href="index.html"><img class="navbar-brand d-inline-block mb-2" src="images/whiteLogo.svg" alt="logo Supply Solutions"></a>
+
+            <!-- Botón para pantallas pequeñas -->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!------------------------------------------------>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Productos y servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Información</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="tienda.html">Mi carrito <i class="bi bi-cart4"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Mi cuenta</a></li>
+
+                    <!-- Caja de bússqueda -->
+                    <form role="search" class="col-12 col-lg-auto mb-2 mb-lg-2 me-lg-2">
+                        <input type="search" class="form-control form-control-light form-control-sm text-secondary-emphasis" placeholder="Buscar..." aria-label="Search">
+                    </form>
+                    <!--------------------------------->
+
+                    <li class="nav-item"><a class="nav-link text-white" href="login.html" target="_blank">Iniciar sesión</a></li>
+                </ul>
+            </div>
+        
+        </nav>
+    </header>
+
+    <!-- SECCIÓN SLIDE "CARRUSEL" DE IMÁGENES -->   
+
+    <div id="carouselProducts" class="carousel carousel-light slide d-none d-lg-block">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselProducts" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselProducts" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselProducts" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/Cleaning.jpg" class="d-block w-100" alt="Cleaning products image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/Supplies-image.jpg" class="d-block w-100" alt="Supplies image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                
+            <div class="carousel-item">
+                    <img src="images/Office meeting.jpg" class="d-block w-100" alt="Office image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducts" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProducts" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <!-------------------------------- PRODUCTOS ---------------------------->
+
+    <!----------------------------- OFERTAS DEL MES / SEMANA ------------------------------->
+
+    <div class="container">
+        <div class="row my-5">
+            <h3 class="text-center mt-5">Ofertas del mes / semana</h3>
+            <p class="fw-ligth w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ullam veritatis animi quaerat sint non.</p>
+        </div>
+
+        <div class="row g-4 my-5 mx-auto owl-carousel owl-theme">
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+    
+    <!-------------------------------------PRODUCTOS NUEVOS------------------------------>
+    <div class="container">
+        <div class="row my-5">
+            <h3 class="text-center mt-40">Productos nuevos</h3>
+            <p class="fw-ligth w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ullam veritatis animi quaerat sint non.</p>
+        </div>
+
+        <div class="row g-4 my-5 mx-auto owl-carousel owl-theme">
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------- PRODUCTOS DESTACADOS ---------------------------------->
+    <div class="container">
+        <div class="row my-5">
+            <h3 class="text-center mt-40">Productos destacados</h3>
+            <p class="fw-ligth w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ullam veritatis animi quaerat sint non.</p>
+        </div>
+
+        <div class="row g-4 my-5 mx-auto owl-carousel owl-theme">
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="col product-item mx-auto">
+                <div class="product-img">
+                    <img src="images/Box.png" alt="product image" class="img-fluid d-block mx-auto">
+                    <span class="heart-icon">
+                        <i class="bi bi-heart"></i>
+                    </span>
+                        <div class="row btns w-100 mx-auto text-center">
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-cart-plus-fill"></i> Añadir al carrito
+                            </button>
+                            <button type="button" class="col-6 py-2">
+                                <i class="bi bi-binoculars-fill"></i> Ver producto
+                            </button>
+                        </div>                    
+                </div>
+
+                <div class="product-info p-3">
+                    <span class="product-type">Categoría del producto</span>
+                    <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Nombre del producto y descripción corta de sus beneficios.</a>
+                    <span class="product-price">$ 99.999</span>
+
+                    <div class="rating d-flex mt-1">
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span>(30 opiniones)</span>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE DE MARCAS ALIADAS (LOGOS) -->
+    <h3 class="text-center mb-3">Marcas aliadas</h3>
+    <div class="slider">        
+        <div class="slide-track">
+            
+            <div class="slide">
+                <img src="images/3M 1.png" alt="logo 1">
+            </div>
+
+            <div class="slide">
+                <img src="images/colombina 1.png" alt="logo 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/Familia-logo 1.png" alt="logo 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/hp-logo 1.png" alt="logo 4">
+            </div>
+
+            <div class="slide">
+                <img src="images/incauca 1.png" alt="logo 5">
+            </div>
+
+            <div class="slide">
+                <img src="images/Unilever-logo.png" alt="logo 10">
+            </div>
+
+            <div class="slide">
+                <img src="images/Logo-Epson 1.png" alt="logo 6">
+            </div>
+
+            <div class="slide">
+                <img src="images/Nestle 1.png" alt="logo 7">
+            </div>
+
+            <div class="slide">
+                <img src="images/Oma 1.png" alt="logo 8">
+            </div>
+
+            <div class="slide">
+                <img src="images/logo-aguila-roja 1.png" alt="logo 9">
+            </div>            
+
+            <div class="slide">
+                <img src="images/3M 1.png" alt="logo 1">
+            </div>
+
+            <div class="slide">
+                <img src="images/colombina 1.png" alt="logo 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/Familia-logo 1.png" alt="logo 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/hp-logo 1.png" alt="logo 4">
+            </div>
+
+            <div class="slide">
+                <img src="images/Unilever-logo.png" alt="logo 10">
+            </div>
+
+            <div class="slide">
+                <img src="images/incauca 1.png" alt="logo 5">
+            </div>
+
+            <div class="slide">
+                <img src="images/Logo-Epson 1.png" alt="logo 6">
+            </div>
+
+            <div class="slide">
+                <img src="images/Nestle 1.png" alt="logo 7">
+            </div>
+
+            <div class="slide">
+                <img src="images/Oma 1.png" alt="logo 8">
+            </div>
+
+            <div class="slide">
+                <img src="images/logo-aguila-roja 1.png" alt="logo 9">
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- F O O T E R - S E C T I O N -->
+
+    <footer class="bg-primary text-light py-5 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <img src="images/whiteLogo.svg" alt="Logo Supply Solutions" class="mb-3"><br>
+            
+                    <p>Síguenos en: <br><br>
+                        <a href="#"><i class="bi bi-facebook text-light m-2"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-light m-2"></i></a>
+                        <a href="#"><i class="bi bi-tiktok text-light m-2"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-light m-2"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp text-light m-2"></i></a>
+                    </p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>Usuarios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="register.html" class="text-light text-decoration-none mb-4" target="_blank">Regístrate</a></li>
+                        <li><a href="login.html" class="text-light text-decoration-none mb-4" target="_blank">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">            
+                        <li><a href="#Home" class="text-light text-decoration-none mb-4">Inicio</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Características</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Tienda</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Precios</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Acerca de</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Términos legales</h5>
+                    <ul class="list-unstyled">            
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Políticas de privacidad</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Términos y condiciones</a></li>
+                    </ul>
+                </div>               
+
+            </div>
+        </div>     
+
+        <hr class="my-3">
+
+        <p class="text-center">© 2023 Felipe Santamaría. Reservados todos los derechos.</p>
+
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="owl_carousel/owl.carousel.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="products-carousel.js"></script>
+</body>
+</html>

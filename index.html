@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Supply Solutions</title>
+</head>
+
+<body>
+
+    <!-- SECCIÓN "HEADER" CONTIENE TAMBIÉN EL MENÚ DE NAVEGACIÓN => fijo en la parte superior (Desktop and mobile) -->
+    
+    <header class="bg-primary text-white container-fluid fixed-top">
+
+        <!-- INFO AND SOCIAL NETWORKS -->
+        <div id="info" class="row m-2 d-none d-lg-block">
+            <p class="col m-auto p-2"><i class="bi bi-geo-alt-fill"></i> Mi dirección principal #00 - 00 Ciudad - País</p>
+            <p class="col m-auto"><i class="bi bi-telephone-fill"></i> Teléfono: +indicativo 000 00 00</p>
+                
+
+            <!-- Social links -->
+            <div class=" col d-flex justify-content-end">
+                <a href="#"><i class="bi-facebook text-white m-2"></i></a>
+                <a href="#"><i class="bi-instagram text-white m-2"></i></a>
+                <a href="#"><i class="bi-tiktok text-white m-2"></i></a>
+                <a href="#"><i class="bi-linkedin text-white m-2"></i></a></i>
+                <a href="#"><i class="bi-whatsapp text-white m-2"></i></a>
+            </div>
+        </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-primary styles-nav p-3" role="navigation">
+
+            <!-- Logo/botón home -->
+            <a href="#inicio"><img class="navbar-brand d-inline-block mb-2" src="images/whiteLogo.svg" alt="logo Supply Solutions"></a>
+
+            <!-- Botón para pantallas pequeñas -->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!------------------------------------------------>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#ayuda">¿Cómo podemos ayudarte?</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#opiniones">Opiniones</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="login.html" target="_blank">Iniciar sesión</a></li>
+                </ul>
+            </div>
+        
+        </nav>
+    </header>    
+
+    <!-- INICIO -->
+    <section id="inicio" class="d-flex align-items-center m-auto fade-up" style="width: 100%; height: 876px;">
+            
+        <h1 class="text-white text-center h1 p-3">¿Necesitas suministros para tu empresa y hogar?</h1>
+        <h2 class="text-white text-center h2 p-3 m-4" >Tenemos productos y servicios a la medida de tus necesidades, te garantizamos excelentes resultados.</h2>
+        <a id="button" type="button" class="btn btn-primary fw-normal fs-3 mx-auto p-4" style=" width: auto;
+        height: auto;" href="#contacto">Déjanos un mensaje</a>    
+        
+    </section>    
+
+    <!-- ¿CÓMO PODEMOS AYUDARTE? -->
+    <section id="ayuda" class="container text-center fade-up" >
+
+        <h2 id="title-help">¿Cómo podemos ayudarte?</h2> <br>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <article id="service" class="text-center">
+                    <img src="images/Supplies-tag.svg" alt="tag" class="icon">
+                    <h3>Venta de suministros</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veritatis nisi esse? Fuga adipisci laboriosam dicta ad impedit.</p>
+                </article>
+            </div>            
+            
+            <div class="col-md-4">
+                <article id="service" class="text-center">
+                    <img src="images/cleaning-products.svg" alt="coffee cup" class="icon">
+                    <h3>Productos de limpieza y cafetería</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor adipisci necessitatibus architecto temporibus, ab deleniti dolorem quasi nemo.</p>
+                </article>
+            </div>
+            
+            <div class="col-md-4">
+                <article id="service" class="text-center">
+                    <img src="images/briefcase.svg" alt="briefcase" class="icon">
+                    <h3>Insumos corporativos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa suscipit aperiam iste, reiciendis, at eum cupiditate velit consequatur repellat, rerum omnis recusandae?</p>
+                </article>
+            </div>
+            
+        </div>
+            
+    </section>
+
+    <!-- OPINIONES -->
+    <section id="opiniones" class="container text-center fade-up">
+
+        <h2 class="my-5">Opiniones de nuestros clientes</h2>
+
+        <div class="row">
+            
+            <div class="col-md-4">
+                <article id="clientes">
+                    <img src="images/María.png" alt="María image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis consequuntur corporis vel sapiente libero. Dolor quos ab delectus recusandae.<br>
+                    <b>María Roríguez CEO Ágora Inc.</b></p>
+                </article>
+            </div>
+            
+            <div class="col-md-4">
+                <article id="clientes">
+                    <img src="images/Alejandra.png" alt="Alejandra image">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum vero, eaque amet sint sed cum illo nam quos maxime esse a voluptas corporis animi odio nisi explicabo.<br>
+                    <b>Alejandra Castaño Ecomoda</b></p>
+                </article>
+            </div>
+            
+            <div class="col-md-4">
+                <article id="clientes">
+                    <img src="images/Alexander.png" alt="Alexander image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia illo commodi. Veritatis dolorum quas magni blanditiis perspiciatis atque! Asperiores nostrum voluptate.<br>
+                    <b>Alexander Motenegro Easymarket.com</b></p>
+                </article>
+            </div>                
+                            
+        </div>      
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="container-full mt-5 mb-0 fade-up">
+
+        <div class="row row-eq-height bg-primary text-white align-items-center m-25">
+            <div class="col-md-6 col-text">
+                <h2 class="ps-3">Sobre nosotros</h2>
+                <h4 class="ps-3">Estamos comprometidos en brindarte el mejor servicio a la medida de tus necesidades.</h4>
+                <p class="ps-3">Lorem ipsum dolor sit amet consectetur. Purus mauris praesent urna nunc suscipit dui enim convallis. Risus nunc consequat in ipsum augue condimentum nunc pulvinar. Elit tincidunt praesent commodo placerat ultricies sed faucibus amet orci. Aliquet ut odio libero ullamcorper ullamcorper sagittis et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quae soluta commodi inventore magnam officiis quas dolore suscipit. Dolorem perspiciatis officiis voluptatem ullam fugit id.</p> 
+                
+            </div>
+
+            <div class="col-md-6 col-image">
+                <img src="images/About us.jpg" alt="Office meeting image">
+            </div>
+            
+        </div>      
+
+    </section>
+
+    <!-- CONTÁCTANOS -->
+
+    <!-- Encabezado texto sobre imagen -->
+    <div class="contactanos d-flex text-white align-items-start justify-content-center m-auto t-0 fade-up" style="width: 100%; height: 415px;">            
+        <h2 class="ps-3">Contáctanos</h2>
+        <p class="ps-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit delectus explicabo nobis maiores temporibus quas deleniti ea dignissimos dolorum tempora, rerum adipisci dicta voluptas quae amet eos neque voluptates alias culpa eveniet cumque sapiente. Labore rerum possimus amet dolore aspernatur iusto omnis, delectus iure quisquam obcaecati ipsum maiores libero ab.</p>
+    </div>
+    <!--------------------------------------------------------------------->
+    
+    <section id="contacto" class="container m-auto mt-0 mb-5">
+        
+        <div class="row ps-2"> <!-- m-25 -->
+
+            <!-- Datos del negocio -->
+            <div class=" col-sm-4 text-primary ps-3 pe-45">
+                <h3 class="mt-5">Consultas</h3>
+                <p><i class="bi bi-telephone-fill"></i> Teléfono 1: +00 000 00 00</p>
+                <p><i class="bi bi-telephone-fill"></i> Teléfono 2: +00 000 00 00</p>
+                <p><i class="bi bi-telephone-fill"></i> Teléfono 3: +00 000 00 00</p>
+                <p><i class="bi bi-phone-fill"></i> Celular: +00 000 000 00 00</p>
+
+                <p><i class="bi bi-envelope-at-fill"></i> correo 1: hola@supplysolutions.com</p>
+                <p><i class="bi bi-envelope-at-fill"></i> correo 2: hola@supplysolutions.com</p>
+                <p><i class="bi bi-envelope-at-fill"></i> correo 3: hola@supplysolutions.com</p>
+    
+                <h3>Aquí nos encuentras</h3> 
+                <p><i class="bi bi-house-door-fill"></i> Dirección 1</p>
+                <p><i class="bi bi-house-door-fill"></i> Dirección 2</p>
+                <p><i class="bi bi-house-door-fill"></i> Dirección 3</p>
+                <p><i class="bi bi-house-door-fill"></i> Dirección 4</p>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <form action="action_page.php" method="post" class="col-sm-7 ps-3 mt-4">
+
+                <!-- Nombres -->
+                <div class="mb-3">
+                    <label for="names" class="form-label input-group input-group-lg">
+                        <i class="bi bi-person-fill input-group-text text-primary"></i>
+                        <input type="text" name="names" id="names" placeholder="*Nombres" class="form-control form-control-lg" autofocus required>
+                    </label>
+                </div>
+                
+                <!-- E-mail -->
+                <div class="mb-3">
+                    <label for="email" class="form-label input-group input-group-lg">
+                        <i class="bi bi-envelope-at-fill input-group-text text-primary"></i>
+                        <input type="email" name="email" id="email" placeholder=" *E-mail ejemplo@micorreo.com" class="form-control form-control-lg" required>
+                    </label>
+                </div>
+                
+                <!-- Teléfono -->
+                <div class="mb-3">
+                    <label for="telefono" class="form-label input-group input-group-lg">
+                        <i class="bi bi-telephone-fill input-group-text text-primary"></i>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono o celular" class="form-control form-control-lg">
+                    </label>
+                </div>
+                
+                <!-- Mensaje -->
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label input-group">
+                        <textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Escribe aquí tu mensaje" class="form-control form-control-lg" style="width: auto;"></textarea>
+                    </label>
+                </div>            
+
+                <!-- Botón ENVIAR -->
+                <input type="submit" value="ENVIAR" class="btn btn-primary" style="width: 100%;">
+                
+            </form>
+
+        </div>        
+
+    </section>
+
+    <!-- F O O T E R - S E C T I O N -->
+
+    <footer class="bg-primary text-light py-5 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <img src="images/whiteLogo.svg" alt="Logo Supply Solutions" class="mb-3"><br>
+            
+                    <p>Síguenos en: <br><br>
+                        <a href="#"><i class="bi bi-facebook text-light m-2"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-light m-2"></i></a>
+                        <a href="#"><i class="bi bi-tiktok text-light m-2"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-light m-2"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp text-light m-2"></i></a>
+                    </p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>Usuarios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="register.html" class="text-light text-decoration-none mb-4" target="_blank">Regístrate</a></li>
+                        <li><a href="login.html" class="text-light text-decoration-none mb-4" target="_blank">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">            
+                        <li><a href="#Home" class="text-light text-decoration-none mb-4">Inicio</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Características</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Tienda</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Precios</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Acerca de</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Términos legales</h5>
+                    <ul class="list-unstyled">            
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Políticas de privacidad</a></li>
+                        <li><a href="#" class="text-light text-decoration-none mb-4">Términos y condiciones</a></li>
+                    </ul>
+                </div>               
+
+            </div>
+        </div>     
+
+        <hr class="my-3">
+
+        <p class="text-center">© 2023 Felipe Santamaría. Reservados todos los derechos.</p>
+
+    </footer>    
+
+    <!-- Bootstrap y librerías adicionales -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="scripts.js"></script>
+    
+</body>
+</html>

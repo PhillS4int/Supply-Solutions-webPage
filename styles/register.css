@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --supply-blue: #0d6efd;
+    --supply-white: #fff;
+    --supply-grey: #9A9797;
+    --supply-hover: #317ff5;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../images/registrobg.jpg');
+    background-size: cover;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-color: var(--supply-white);
+    color: var(--supply-grey);
+    border-radius: 5px;
+    width: 18.25rem;
+    height: 31.25rem;
+    flex-shrink: 0;
+    margin: auto;
+    font-size: 0.8125rem;
+    padding: 1.19rem;
+}
+
+#container .logo {
+    align-items: center;
+    width: 90%;
+    height: 1.875rem;
+    margin-bottom: 0.88rem;
+}
+
+#container  h1 {
+    color: var(--supply-blue);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.81rem;
+}
+
+#container input {
+    
+    border-radius: 5px;
+    border: 1px solid var(--supply-blue);    
+    width: 100%;
+    height: 1.9375rem;
+    margin-bottom: 0.88rem;
+    padding: 5px 5px 5px 5px;
+    /* position: relative; */
+}
+
+#container #terms {/*Esta es la casilla de verificación de términos y condiciones (checkbox)*/
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-bottom: 1.12rem;
+}
+
+#container #button {
+    background-color: var(--supply-blue);
+    border-style: none;
+    cursor: pointer;
+    color: var(--supply-white);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    padding-top: 6px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+#container #button:hover {
+    background-color: var(--supply-hover);
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:  var(--supply-blue);
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--supply-hover);
+}
+
+#container p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Mostrar u coultar contraseña del campo "Contraseña */
+
+.toggle-password {
+    position: relative;
+    bottom: 27px;
+    left: 221px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggle-password::before {
+    content: url('../images/openeye-vector.svg');    
+    position: absolute;    
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-password.hide::before {
+    content: url('../images/eyeOff.svg');
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Mostrar u ocultar contraseña del campo "Confirmar Contraseña */
+
+.see-password {
+    position: relative;
+    bottom: 28px;
+    left: 221px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.see-password::before {
+    content: url('../images/openeye-vector.svg');
+    position: absolute;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.see-password.hide::before {
+    content: url('../images/eyeOff.svg');
+}
+
+/******************* R E S P O N S I V E *********************/
+
+/* Tablets size */
+
+@media only screen and (max-width: 780px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('../images/registrobg.jpg');
+        background-size: cover;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+
+    #container {
+        background-color: var(--supply-white);
+        color: var(--supply-grey);
+        border-radius: 5px;
+        width: 25.25rem;
+        height: 31.25rem;
+        flex-shrink: 0;
+        margin: auto;
+        font-size: 0.8125rem;
+        padding: 1.19rem;
+    }
+
+    #container .logo {
+        align-items: center;
+        width: 50%;
+        height: 1.875rem;
+        margin-bottom: 0.88rem;
+    }
+
+    /* See password and confirm password buttons. */
+
+    .toggle-password {
+        position: relative;
+        bottom: 27px;
+        left: 337px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .see-password {
+        position: relative;
+        bottom: 28px;
+        left: 337px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+}
+
+/* Phone size */
+
+@media only screen and (max-width: 390px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('../images/registrobg.jpg');
+        background-size: cover;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+
+    #container {
+        background-color: var(--supply-white);
+        color: var(--supply-grey);
+        border-radius: 5px;
+        width: 25.25rem;
+        height: 31.25rem;
+        flex-shrink: 0;
+        margin: auto;
+        font-size: 0.8125rem;
+        padding: 1.19rem;
+    }
+
+    #container .logo {
+        align-items: center;
+        width: 50%;
+        height: 1.875rem;
+        margin-bottom: 0.88rem;
+    }
+
+    /* See password and confirm password buttons. */
+
+    .toggle-password {
+        position: relative;
+        bottom: 27px;
+        left: 337px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .see-password {
+        position: relative;
+        bottom: 28px;
+        left: 337px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+}
